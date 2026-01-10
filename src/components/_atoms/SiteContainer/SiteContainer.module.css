@@ -1,0 +1,5 @@
+.siteContainer {
+  margin: 0 auto;
+  max-width: var(--site-max-width);
+  height: 100%;
+}
