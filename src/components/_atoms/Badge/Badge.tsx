@@ -3,10 +3,10 @@ import clsx from "clsx";
 import styles from "./Badge.module.css";
 
 type TBadgeProps = {
-  copy: string;
+  label: string;
   type: TRoleType;
 };
 
-export const Badge = ({ copy }: TBadgeProps) => {
-  return <span className={clsx(styles.badge)}>{copy}</span>;
+export const Badge = ({ label }: TBadgeProps) => {
+  return <span className={clsx(styles.badge)}>{label}</span>;
 };

@@ -1,9 +1,11 @@
+import { ROLES } from "@app/constants/roles.ts";
 import { componentRenderer, screen } from "@app/tests/config/custom-render";
 import type { ComponentProps } from "react";
 import { Badge } from ".";
 
 const mockProps: ComponentProps<typeof Badge> = {
-  copy: "test",
+  label: "test",
+  type: ROLES.ADMIN,
 };
 
 const setup = componentRenderer(Badge, mockProps);
@@ -13,7 +15,7 @@ describe(Badge, () => {
     beforeEach(() => setup());
 
     it("should render the badge component", () => {
-      const test = screen.getByText(mockProps.copy);
+      const test = screen.getByText(mockProps.label);
 
       expect(test).toBeVisible();
     });
