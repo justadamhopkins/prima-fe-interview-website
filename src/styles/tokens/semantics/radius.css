@@ -1,0 +1,10 @@
+@import "../primitives/radius.css";
+
+:root {
+  --radius-none: var(--radius-0);
+  --radius-xs: var(--radius-1);
+  --radius-sm: var(--radius-2);
+  --radius-md: var(--radius-3);
+  --radius-lg: var(--radius-4);
+  --radius-full: var(--radius-round);
+}
