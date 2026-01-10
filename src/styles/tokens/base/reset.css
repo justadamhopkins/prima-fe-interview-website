@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 /* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
@@ -36,6 +42,11 @@ ol[role="list"] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  background-color: var(--colour-bg);
+  color: var(--colour-text);
+  font-size: var(--site-base-font-size);
+  margin: 0;
+  font-family: var(--typography-body-font-family);
 }
 
 /* Set shorter line heights on headings and interactive elements */
