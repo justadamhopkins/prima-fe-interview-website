@@ -1,23 +1,10 @@
-import { ROLES } from "@app/constants/roles.ts";
-import { Badge } from "@atoms/Badge";
+import { SiteContainer } from "@atoms/SiteContainer";
+import { HomePage } from "@components/_templates/HomePage";
 
 export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Badge copy={ROLES.ADMIN} type={ROLES.ADMIN} />
-      </header>
-    </div>
+    <SiteContainer>
+      <HomePage />
+    </SiteContainer>
   );
 };
