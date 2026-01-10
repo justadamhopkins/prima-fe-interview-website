@@ -1,3 +1,6 @@
+import { ROLES } from "@app/constants/roles.ts";
+import { Badge } from "@atoms/Badge";
+
 export const App = () => {
   return (
     <div className="App">
@@ -13,6 +16,7 @@ export const App = () => {
         >
           Learn React
         </a>
+        <Badge copy={ROLES.ADMIN} type={ROLES.ADMIN} />
       </header>
     </div>
   );
