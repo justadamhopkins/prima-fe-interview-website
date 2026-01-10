@@ -5,7 +5,8 @@ import { Badge } from ".";
 
 const mockProps: ComponentProps<typeof Badge> = {
   label: "test",
-  type: ROLES.ADMIN,
+  variant: ROLES.ADMIN,
+  size: "sm"
 };
 
 const setup = componentRenderer(Badge, mockProps);

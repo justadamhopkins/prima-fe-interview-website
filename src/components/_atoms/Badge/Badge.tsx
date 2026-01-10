@@ -1,12 +1,25 @@
 import type { TRoleType } from "@app/constants/roles.ts";
+import type { TTshirtSize, TWithClassName } from "@app/types/common.ts";
 import clsx from "clsx";
 import styles from "./Badge.module.css";
 
-type TBadgeProps = {
+type TBadgeProps = TWithClassName<{
   label: string;
-  type: TRoleType;
-};
+  variant: TRoleType;
+  size: TTshirtSize;
+}>;
 
-export const Badge = ({ label }: TBadgeProps) => {
-  return <span className={clsx(styles.badge)}>{label}</span>;
+export const Badge = ({ label, variant, size, className }: TBadgeProps) => {
+  return (
+    <span
+      className={clsx([
+        styles.badge,
+        styles[`size-${size}`],
+        styles[`variant-${variant}`],
+        className,
+      ])}
+    >
+      {label}
+    </span>
+  );
 };
