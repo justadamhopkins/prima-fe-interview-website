@@ -1,0 +1,28 @@
+@import "../primitives/typography.css";
+
+:root {
+  --site-base-font-size: var(--font-size-16);
+  --typography-body-font-family: var(--font-family-poppins);
+
+  --typography-title-m-font-family: var(--font-family-poppins);
+  --typography-title-m-font-weight: var(--font-weight-medium);
+  --typography-title-m-font-size: var(--font-size-24);
+  --typography-title-m-line-height: var(--line-height-130);
+
+  --typography-text-l-font-family: var(--font-family-poppins);
+  --typography-text-l-font-weight: var(--font-weight-regular);
+  --typography-text-l-font-size: var(--font-size-16);
+  --typography-text-l-line-height: var(--line-height-100);
+
+  --typography-text-m-font-family: var(--font-family-poppins);
+  --typography-text-m-font-weight: var(--font-weight-regular);
+  --typography-text-m-medium-font-weight: var(--font-weight-medium);
+  --typography-text-m-font-size: var(--font-size-14);
+  --typography-text-m-line-height: var(--line-height-170);
+
+  --typography-text-s-font-family: var(--font-family-poppins);
+  --typography-text-s-font-weight: var(--font-weight-light);
+  --typography-text-s-medium-font-weight: var(--font-weight-medium);
+  --typography-text-s-font-size: var(--font-size-12);
+  --typography-text-s-line-height: var(--line-height-170);
+}

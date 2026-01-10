@@ -1,0 +1,5 @@
+@import "../primitives/spacing.css";
+
+:root {
+  --site-max-width: var(--space-480);
+}

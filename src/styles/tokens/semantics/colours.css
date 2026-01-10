@@ -1,7 +1,7 @@
 @import "../primitives/colours.css";
 
 :root {
-  --color-bg: var(--colour-neutral-50);
+  --colour-bg: var(--colour-neutral-50);
   --colour-text: var(--colour-neutral-950);
   --colour-text-muted: var(--colour-neutral-700);
   --colour-primary: var(--colour-orange-500);
