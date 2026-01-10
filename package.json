@@ -32,7 +32,6 @@
     "add": "2.0.6",
     "autoprefixer": "10.4.23",
     "jsdom": "27.3.0",
-    "postcss-import": "16.1.1",
     "postcss-nested": "7.0.2",
     "typescript": "5.9.3",
     "vite": "7.2.7",
