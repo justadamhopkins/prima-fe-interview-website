@@ -1,0 +1,4 @@
+.label {
+  composes: textMMedium from "@styles/global/typography.module.css";
+  color: var(--colour-fg-muted);
+}
