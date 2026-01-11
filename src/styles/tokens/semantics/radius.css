@@ -6,5 +6,7 @@
   --radius-sm: var(--radius-2);
   --radius-md: var(--radius-3);
   --radius-lg: var(--radius-4);
+  --radius-xl: var(--radius-5);
+  --radius-2xl: var(--radius-6);
   --radius-full: var(--radius-round);
 }

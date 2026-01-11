@@ -11,6 +11,7 @@
 
   --typography-text-l-font-family: var(--font-family-poppins);
   --typography-text-l-font-weight: var(--font-weight-regular);
+  --typography-text-l-medium-font-weight: var(--font-weight-medium);
   --typography-text-l-font-size: var(--font-size-16);
   --typography-text-l-line-height: var(--line-height-100);
 

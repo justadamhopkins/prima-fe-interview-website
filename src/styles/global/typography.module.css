@@ -12,6 +12,13 @@
   line-height: var(--typography-text-l-line-height);
 }
 
+.textLMedium {
+  font-family: var(--typography-text-l-font-family);
+  font-weight: var(--typography-text-l-medium-font-weight);
+  font-size: var(--typography-text-l-font-size);
+  line-height: var(--typography-text-l-line-height);
+}
+
 .textM {
   font-family: var(--typography-text-m-font-family);
   font-weight: var(--typography-text-m-font-weight);
@@ -26,7 +33,7 @@
   line-height: var(--typography-text-m-line-height);
 }
 
-.textS {
+.textSm {
   font-family: var(--typography-text-s-font-family);
   font-weight: var(--typography-text-s-font-weight);
   font-size: var(--typography-text-s-font-size);

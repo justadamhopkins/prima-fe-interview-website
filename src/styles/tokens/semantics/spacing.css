@@ -2,4 +2,24 @@
 
 :root {
   --site-max-width: var(--space-480);
+
+  /* gaps between elements */
+  --space-gap-xs: var(--space-1); /* 4px */
+  --space-gap-sm: var(--space-2); /* 8px */
+  --space-gap-md: var(--space-4); /* 16px */
+  --space-gap-lg: var(--space-6); /* 24px */
+  --space-gap-xl: var(--space-8); /* 32px */
+
+  /* padding inside components */
+  --space-pad-xs: var(--space-2); /* 8px */
+  --space-pad-sm: var(--space-3); /* 12px */
+  --space-pad-md: var(--space-4); /* 16px */
+  --space-pad-lg: var(--space-6); /* 24px */
+  --space-pad-xl: var(--space-7-5); /* 30px */
+  --space-pad-2xl: var(--space-8); /* 32px */
+
+  /* page / section spacing */
+  --space-layout-sm: var(--space-12); /* 48px */
+  --space-layout-md: var(--space-16); /* 64px */
+  --space-layout-lg: var(--space-24); /* 96px */
 }

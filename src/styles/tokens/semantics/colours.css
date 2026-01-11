@@ -1,10 +1,16 @@
 @import "../primitives/colours.css";
 
 :root {
+  --colour-fg: var(--colour-neutral-900);
+  --colour-fg-muted: var(--colour-neutral-700);
+  --colour-fg-invert: var(--colour-neutral-0);
   --colour-bg: var(--colour-neutral-50);
-  --colour-text: var(--colour-neutral-950);
-  --colour-text-muted: var(--colour-neutral-700);
-  --colour-primary: var(--colour-orange-500);
-  --colour-secondary: var(--colour-navy-900);
-  --colour-accent: var(--colour-teal-600);
+  --colour-bg-muted: var(--colour-neutral-50);
+  --colour-surface-dark: var(--colour-charcoal-900);
+  --colour-accent: var(--colour-blue-600);
+  --colour-accent-strong: var(--colour-navy-900);
+  --colour-accent-alt: var(--colour-teal-600);
+  --colour-accent-contrast: var(--colour-orange-500);
+  --colour-special: var(--colour-purple-700);
+  --colour-ink: var(--colour-neutral-950);
 }
