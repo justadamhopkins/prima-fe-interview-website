@@ -1,0 +1,9 @@
+.input {
+  padding: var(--space-pad-lg);
+  border-radius: var(--radius-2xl);
+  border: none;
+  background: var(--colour-fg-invert);
+  width: 100%;
+  color: var(--colour-ink);
+  composes: textL from "@styles/global/typography.module.css";
+}
