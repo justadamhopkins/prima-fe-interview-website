@@ -1,0 +1,28 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  min-width: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colour-fg-invert);
+
+  &--primary {
+    background-color: var(--colour-accent-contrast);
+  }
+
+  &--sm {
+    composes: textMMedium from "@styles/global/typography.module.css";
+    padding: var(--space-pad-md) var(--space-pad-xl);
+    border-radius: var(--radius-xl);
+  }
+
+  &--lg {
+    composes: textLMedium from "@styles/global/typography.module.css";
+    padding: var(--space-pad-xl);
+    border-radius: var(--radius-2xl);
+  }
+}
