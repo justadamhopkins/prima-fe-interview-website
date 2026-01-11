@@ -6,7 +6,6 @@ import { Badge } from ".";
 const mockProps: ComponentProps<typeof Badge> = {
   label: "test",
   variant: ROLES.ADMIN,
-  size: "sm"
 };
 
 const setup = componentRenderer(Badge, mockProps);
@@ -16,9 +15,9 @@ describe(Badge, () => {
     beforeEach(() => setup());
 
     it("should render the badge component", () => {
-      const test = screen.getByText(mockProps.label);
+      const label = screen.getByText(mockProps.label);
 
-      expect(test).toBeVisible();
+      expect(label).toBeVisible();
     });
   });
 });

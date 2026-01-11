@@ -1,24 +1,22 @@
 .badge {
-  padding: 0.25rem 0.4rem;
   border-radius: var(--radius-md);
-}
+  padding: var(--space-pad-xs) var(--space-pad-md);
+  color: var(--colour-fg-invert);
+  composes: textSMedium from '@styles/global/typography.module.css';
 
-.admin {
-  background: red;
-}
+  &--admin {
+    background-color: var(--colour-accent-strong);
+  }
 
+  &--editor {
+    background-color: var(--colour-accent-alt);
+  }
 
-.size-sm {
-  font-size: 12px;
-  padding: 2px 8px;
-}
+  &--viewer {
+    background-color: var(--colour-accent);
+  }
 
-.size-md {
-  font-size: 14px;
-  padding: 4px 10px;
-}
-
-.size-lg {
-  font-size: 16px;
-  padding: 6px 12px;
+  &--guest {
+    background-color: var(--colour-special);
+  }
 }
