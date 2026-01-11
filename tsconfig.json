@@ -19,6 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["vitest/globals"],
     "paths": {
       "@app/*": ["src/*"],
       "@components/*": ["src/components/*"],
@@ -31,7 +32,8 @@
       "@utils/*": ["src/utils/*"],
       "@common/types/*": ["src/types/*"],
       "@test/*": ["src/test/*"],
-      "@helpers/*": ["src/helpers/*"]
+      "@helpers/*": ["src/helpers/*"],
+      "@constants/*": ["src/constants/*"]
     }
   },
   "include": ["src"]

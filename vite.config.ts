@@ -7,6 +7,7 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./src/tests/config/setupTests.ts",
+    clearMocks: true,
   },
   resolve: {
     alias: {
@@ -22,6 +23,7 @@ export default defineConfig({
       "@types": path.resolve(__dirname, "src/types"),
       "@test": path.resolve(__dirname, "src/test"),
       "@helpers": path.resolve(__dirname, "src/helpers"),
+      "@constants": path.resolve(__dirname, "src/constants"),
     },
   },
 });
