@@ -41,11 +41,11 @@ export const DialogProvider: FC<IDialogProviderProps> = ({
   });
 
   return (
-    <DialogContext.Provider value={context}>
+    <DialogContext value={context}>
       <DialogRoot modal={modal} open={isDialogOpen} onOpenChange={toggle}>
         {children}
       </DialogRoot>
-    </DialogContext.Provider>
+    </DialogContext>
   );
 };
 
