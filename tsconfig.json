@@ -27,11 +27,12 @@
       "@molecules/*": ["src/components/_molecules/*"],
       "@organisms/*": ["src/components/_organisms/*"],
       "@templates/*": ["src/_templates/*"],
+      "@utilities/*": ["src/utilities/*"],
       "@hooks/*": ["src/hooks/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"],
       "@common/types/*": ["src/types/*"],
-      "@test/*": ["src/test/*"],
+      "@tests/*": ["src/tests/*"],
       "@helpers/*": ["src/helpers/*"],
       "@constants/*": ["src/constants/*"]
     }
