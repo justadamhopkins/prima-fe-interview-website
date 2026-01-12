@@ -1,3 +1,18 @@
+.heading {
+  font-family: var(--typography-heading-font-family);
+  font-weight: var(--typography-heading-font-weight);
+  font-size: var(--typography-heading-font-size);
+  line-height: var(--typography-heading-line-height);
+
+  @media (min-width: 640px) {
+    font-size: var(--typography-heading-lg-font-size);
+  }
+
+  @media (min-width: 768px) {
+    font-size: var(--typography-heading-xl-font-size);
+  }
+}
+
 .titleM {
   font-family: var(--typography-title-m-font-family);
   font-weight: var(--typography-title-m-font-weight);
