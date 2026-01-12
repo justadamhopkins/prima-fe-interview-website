@@ -7,7 +7,15 @@
   &__heading {
     composes: heading from "@styles/global/typography.module.css";
     span {
-      color: var(--colour-accent-contrast);
+      background: linear-gradient(
+        180deg,
+        var(--colour-text-gradient-start) 0%,
+        var(--colour-text-gradient-end) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
   }
 }

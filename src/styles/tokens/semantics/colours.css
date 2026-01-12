@@ -13,4 +13,6 @@
   --colour-accent-contrast: var(--colour-orange-500);
   --colour-special: var(--colour-purple-700);
   --colour-ink: var(--colour-neutral-950);
+  --colour-text-gradient-start: var(--colour-orange-400);
+  --colour-text-gradient-end: var(--colour-pink-500);
 }
