@@ -3,6 +3,13 @@
 :root {
   --site-base-font-size: var(--font-size-16);
   --typography-body-font-family: var(--font-family-poppins);
+  --typography-heading-xl-font-size: var(--font-size-60);
+  --typography-heading-lg-font-size: var(--font-size-48);
+
+  --typography-heading-font-family: var(--font-family-poppins);
+  --typography-heading-font-weight: var(--font-weight-bold);
+  --typography-heading-font-size: var(--font-size-40);
+  --typography-heading-line-height: var(--line-height-150);
 
   --typography-title-m-font-family: var(--font-family-poppins);
   --typography-title-m-font-weight: var(--font-weight-medium);
