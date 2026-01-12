@@ -3,4 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  &__heading {
+    composes: heading from "@styles/global/typography.module.css";
+    span {
+      color: var(--colour-accent-contrast);
+    }
+  }
 }
