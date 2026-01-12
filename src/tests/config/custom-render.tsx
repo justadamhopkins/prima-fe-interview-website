@@ -1,5 +1,10 @@
-import { type RenderOptions, type RenderResult, render } from "@testing-library/react";
-import { type RenderHookOptions, renderHook } from "@testing-library/react-hooks";
+import {
+  type RenderHookOptions,
+  type RenderOptions,
+  type RenderResult,
+  render,
+  renderHook,
+} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import type { ComponentType, PropsWithChildren, ReactElement, ReactNode } from "react";
@@ -14,14 +19,17 @@ const customRender = (ui: ReactElement, options: RenderOptions = {}): RenderResu
     ...options,
   });
 
-function customRenderHook<TProps extends { children?: ReactNode }, TResult>(
+function customRenderHook<TProps, TResult>(
   callback: (props: TProps) => TResult,
   options?: RenderHookOptions<TProps>,
 ) {
   return renderHook(callback, {
-    wrapper: ({ children }: TProps) => (
-      <WrapperComponent {...options?.initialProps}>{children}</WrapperComponent>
+    wrapper: (props) => (
+      <WrapperComponent {...options?.initialProps}>
+        {(props as { children: ReactNode }).children}
+      </WrapperComponent>
     ),
+
     ...options,
   });
 }
