@@ -2,7 +2,6 @@ import type { TValueOf } from "@common/types/utils";
 
 export const ROLES = {
   ADMIN: "ADMIN",
-  USER: "USER",
   EDITOR: "EDITOR",
   VIEWER: "VIEWER",
   GUEST: "GUEST",
