@@ -20,7 +20,17 @@
     background-color: var(--colour-accent-contrast);
   }
 
+  &--secondary {
+    background-color: var(--colour-accent);
+  }
+
   &--sm {
+    composes: textMMedium from "@styles/global/typography.module.css";
+    padding: var(--space-pad-sm) var(--space-pad-md);
+    border-radius: var(--radius-lg);
+  }
+
+  &--md {
     composes: textMMedium from "@styles/global/typography.module.css";
     padding: var(--space-pad-md) var(--space-pad-xl);
     border-radius: var(--radius-xl);

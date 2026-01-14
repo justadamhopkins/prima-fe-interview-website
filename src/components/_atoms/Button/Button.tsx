@@ -6,13 +6,14 @@ import styles from "./Button.module.css";
 
 export const BUTTON_VARIANTS = {
   PRIMARY: "PRIMARY",
+  SECONDARY: "SECONDARY",
 } as const;
 
 export type TButtonVariants = TValueOf<typeof BUTTON_VARIANTS>;
 
 type TButtonProps = {
   variant: TButtonVariants;
-  size: Extract<TTShirtSizes, "SM" | "LG">;
+  size: TTShirtSizes;
 } & ComponentProps<"button">;
 
 export const Button = ({ children, variant, size, className, ...rest }: TButtonProps) => {
