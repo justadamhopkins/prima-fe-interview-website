@@ -6,12 +6,18 @@ import styles from "./Badge.module.css";
 type TBadgeProps = TWithClassName<{
   label: string;
   variant: Uppercase<TRoleType>;
+  isActive?: boolean;
 }>;
 
-export const Badge = ({ label, variant, className }: TBadgeProps) => {
+export const Badge = ({ label, variant, className, isActive = false }: TBadgeProps) => {
   return (
     <span
-      className={clsx([styles.badge, styles[`badge--${variant.toLocaleLowerCase()}`], className])}
+      className={clsx([
+        styles.badge,
+        styles[`badge--${variant.toLocaleLowerCase()}`],
+        isActive && styles["badge--active"],
+        className,
+      ])}
     >
       {label}
     </span>

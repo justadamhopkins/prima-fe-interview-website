@@ -20,4 +20,9 @@
   &--guest {
     background-color: var(--colour-special);
   }
+
+  &--active {
+    background-color: var(--colour-fg-muted);
+    color: var(--colour-bg-muted);
+  }
 }
