@@ -3,19 +3,39 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--space-gap-4xl);
+
+  &__header {
+    width: 100%;
+    padding: 0 var(--space-pad-md);
+  }
 
   &__heading {
     composes: heading from "@styles/global/typography.module.css";
-    span {
-      background: linear-gradient(
-        180deg,
-        var(--colour-text-gradient-start) 0%,
-        var(--colour-text-gradient-end) 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
+    text-align: center;
+  }
+
+  &__searchWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 var(--space-pad-md);
+  }
+
+  &__filterWrapper {
+    display: none;
+    padding-bottom: var(--space-pad-md);
+    border-bottom: 1px solid var(--colour-ink);
+
+    @media (min-width: 640px) {
+      display: flex;
     }
   }
 }
