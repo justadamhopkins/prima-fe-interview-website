@@ -1,0 +1,13 @@
+.filterChips {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-gap-sm);
+  align-items: center;
+
+  &__trigger {
+    &:focus-visible {
+      outline: 2px solid var(--colour-orange-500);
+      outline-style: auto;
+    }
+  }
+}

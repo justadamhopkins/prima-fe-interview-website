@@ -29,6 +29,7 @@
   }
 
   &__label {
+    --typography-text-m-font-size: var(--font-size-13);
     composes: textMMedium from "@styles/global/typography.module.css";
     margin: 0;
   }

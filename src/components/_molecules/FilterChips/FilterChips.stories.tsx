@@ -1,26 +1,25 @@
 import { ROLES } from "@constants/roles.ts";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
-import { FilterBar } from ".";
+import { FilterChips } from ".";
 
-const meta = {
-  title: "Molecules/FilterBar",
-  component: FilterBar,
+const meta: Meta<typeof FilterChips> = {
+  component: FilterChips,
+  title: "Molecules/FilterChips",
   parameters: {
-    layout: "padded",
+    layout: "centered",
   },
-  tags: ["autodocs"],
   args: {
     selectedValue: [ROLES.ADMIN],
     values: Object.values(ROLES),
     onValueChange: fn(),
   },
-  argTypes: {},
-} satisfies Meta<typeof FilterBar>;
+};
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+type TStory = StoryObj<typeof FilterChips>;
 
-export const Primary: Story = {
+export const Modal: TStory = {
   args: {},
 };
+
+export default meta;
