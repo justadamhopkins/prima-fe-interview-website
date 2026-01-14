@@ -9,7 +9,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease;
   color: var(--colour-fg-invert);
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &--primary {
     background-color: var(--colour-accent-contrast);
