@@ -1,0 +1,12 @@
+.highlight {
+  color: transparent;
+
+  &--primary {
+    background: linear-gradient(
+      180deg,
+      var(--colour-text-gradient-start) 0%,
+      var(--colour-text-gradient-end) 100%
+    );
+    background-clip: text;
+  }
+}
