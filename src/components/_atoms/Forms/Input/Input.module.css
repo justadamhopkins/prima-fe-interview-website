@@ -6,4 +6,8 @@
   width: 100%;
   color: var(--colour-ink);
   composes: textL from "@styles/global/typography.module.css";
+
+  &:focus {
+    outline-color: var(--colour-accent-contrast);
+  }
 }
