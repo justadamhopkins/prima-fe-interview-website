@@ -5,7 +5,11 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
-  gap: var(--space-gap-4xl);
+  gap: var(--space-gap-md);
+
+  @media (min-width: 640px) {
+    gap: var(--space-gap-4xl);
+  }
 
   &__header {
     width: 100%;
@@ -26,16 +30,33 @@
   &__container {
     width: 100%;
     max-width: 1024px;
-    padding: 0 var(--space-pad-md);
+    padding: var(--space-pad-md) var(--space-pad-md) 0 var(--space-pad-md);
   }
 
   &__filterWrapper {
-    display: none;
-    padding-bottom: var(--space-pad-md);
+    padding: var(--space-pad-md) 0;
     border-bottom: 1px solid var(--colour-ink);
+    border-top: 1px solid var(--colour-ink);
 
     @media (min-width: 640px) {
-      display: flex;
+      border-top: none;
+    }
+
+    &--bar {
+      display: none;
+
+      @media (min-width: 640px) {
+        display: flex;
+      }
+    }
+
+    &--dialog {
+      display: block;
+      width: 100%;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
     }
   }
 }
