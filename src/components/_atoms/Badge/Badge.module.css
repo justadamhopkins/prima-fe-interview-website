@@ -1,8 +1,9 @@
 .badge {
   border-radius: var(--radius-md);
-  padding: var(--space-pad-xs) var(--space-pad-md);
+  padding: var(--space-pad-2xs) var(--space-pad-md);
   color: var(--colour-fg-invert);
   composes: textSMedium from "@styles/global/typography.module.css";
+  display: inline-block;
 
   &--admin {
     background-color: var(--colour-accent-strong);
