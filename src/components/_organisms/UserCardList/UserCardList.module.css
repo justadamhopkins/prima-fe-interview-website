@@ -1,0 +1,25 @@
+.userCardList {
+  display: grid;
+  grid-gap: var(--space-gap-sm);
+  grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Tablets/Small desktop: 3 columns (768px+) */
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Desktop: 4 columns (1024px+) */
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
