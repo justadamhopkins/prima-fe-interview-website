@@ -1,0 +1,46 @@
+.userCard {
+  background-color: var(--colour-fg-invert);
+  border-radius: var(--radius-6);
+  border: 1px solid var(--colour-separator);
+  padding: var(--space-pad-md);
+  width: 100%;
+
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-gap-sm);
+    align-items: flex-start;
+    margin-bottom: var(--space-gap-md);
+  }
+
+  &__title {
+    composes: titleM from "@styles/global/typography.module.css";
+    @media (min-width: 640px) {
+      --typography-title-m-font-size: var(--font-size-24);
+    }
+  }
+
+  &__role {
+    composes: textM from "@styles/global/typography.module.css";
+    padding: 0;
+    margin: 0;
+    color: var(--colour-fg-muted);
+
+    @media (min-width: 640px) {
+      --typography-text-m-font-size: var(--font-size-18);
+    }
+  }
+
+  &__detailsWrapper {
+    dd {
+      margin-bottom: var(--space-gap-md);
+    }
+  }
+
+  &__footerWrapper {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
