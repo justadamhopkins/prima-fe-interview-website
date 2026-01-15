@@ -31,6 +31,10 @@
     width: 100%;
     max-width: 1024px;
     padding: var(--space-pad-md) var(--space-pad-md) 0 var(--space-pad-md);
+
+    @media (min-width: 640px) {
+      padding-top: 0;
+    }
   }
 
   &__filterWrapper {
