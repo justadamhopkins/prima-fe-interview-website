@@ -1,0 +1,25 @@
+.detail {
+  &__term {
+    composes: textSm from "@styles/global/typography.module.css";
+    margin-bottom: var(--space-gap-2xs);
+
+    @media (min-width: 640px) {
+      --typography-text-s-font-size: var(--font-size-14);
+    }
+  }
+
+  &__description {
+    composes: textMMedium from "@styles/global/typography.module.css";
+    margin: 0;
+    color: var(--colour-fg-muted);
+
+    a[href^="mailto:"] {
+      color: var(--colour-orange-500);
+      text-decoration: underline;
+    }
+
+    @media (min-width: 640px) {
+      --typography-text-m-font-size: var(--font-size-14);
+    }
+  }
+}

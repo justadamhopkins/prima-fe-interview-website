@@ -1,0 +1,1 @@
+export { DetailTerm } from "./DetailTerm";

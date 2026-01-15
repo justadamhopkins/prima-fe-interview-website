@@ -8,6 +8,6 @@
   transition-duration: 150ms;
 
   &--primary {
-    background-color: var(--colour-fg);
+    background-color: var(--colour-surface-visible);
   }
 }
