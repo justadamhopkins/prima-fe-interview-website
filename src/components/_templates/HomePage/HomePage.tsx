@@ -1,6 +1,7 @@
 import { BUTTON_VARIANTS, Button } from "@atoms/Button";
 import { HIGHLIGHT_VARIANTS, Highlight } from "@atoms/Highlight";
 import { RawButton } from "@atoms/RawButton";
+import { MOCK_USERS } from "@constants/fixtures/users.ts";
 import { ROLES } from "@constants/roles.ts";
 import { TSHIRT_SIZES } from "@constants/settings.ts";
 import { useDisclosure } from "@hooks/useDisclosure";
@@ -8,6 +9,7 @@ import { DIALOG_LAYOUTS, DIALOG_VARIANTS } from "@molecules/Dialog";
 import { FilterBar } from "@molecules/FilterBar";
 import { SearchInput } from "@molecules/SearchInput";
 import { FiltersDialog } from "@organisms/FiltersDialog";
+import { UserCardList } from "@organisms/UserCardList";
 import { useState } from "react";
 import styles from "./Homepage.module.css";
 
@@ -38,6 +40,9 @@ export const HomePage = () => {
             />
           </div>
         </div>
+        <section>
+          <UserCardList users={MOCK_USERS} />
+        </section>
       </div>
     </div>
   );

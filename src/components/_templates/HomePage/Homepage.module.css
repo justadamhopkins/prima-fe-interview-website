@@ -2,8 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+
+  min-height: 100dvh; /* or 100vh as fallback */
   width: 100%;
+
   flex-direction: column;
   gap: var(--space-gap-md);
 
@@ -13,7 +15,11 @@
 
   &__header {
     width: 100%;
-    padding: 0 var(--space-pad-md);
+    padding: var(--space-pad-2xl) var(--space-pad-md) 0 var(--space-pad-md);
+
+    @media (min-width: 1024px) {
+      padding: 0 var(--space-pad-md);
+    }
   }
 
   &__heading {
@@ -32,13 +38,14 @@
     max-width: 1024px;
     padding: var(--space-pad-md) var(--space-pad-md) 0 var(--space-pad-md);
 
-    @media (min-width: 640px) {
-      padding-top: 0;
+    @media (min-width: 1024px) {
+      padding: 0;
     }
   }
 
   &__filterWrapper {
     padding: var(--space-pad-md) 0;
+    margin-bottom: var(--space-gap-2xl);
     border-bottom: 1px solid var(--colour-ink);
     border-top: 1px solid var(--colour-ink);
 
