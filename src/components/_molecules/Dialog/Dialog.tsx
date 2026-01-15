@@ -90,7 +90,10 @@ export const DialogContent: FC<TDialogProps> = ({
     <AnimatePresence>
       {isOpen && (
         <DialogPrimitive.Portal forceMount={true}>
-          <DialogPrimitive.Overlay asChild={true}>
+          <DialogPrimitive.Overlay
+            asChild={true}
+            className={styles["dialog__overlay--opacity-low"]}
+          >
             <Overlay
               as={motion.div}
               variant={overlayVariant}

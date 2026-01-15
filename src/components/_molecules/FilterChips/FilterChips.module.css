@@ -1,7 +1,7 @@
 .filterChips {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--space-gap-sm);
+  gap: var(--space-gap-xs);
   align-items: center;
 
   &__trigger {
