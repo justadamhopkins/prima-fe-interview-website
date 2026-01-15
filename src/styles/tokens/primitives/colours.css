@@ -1,8 +1,10 @@
 :root {
   --colour-neutral-0: #ffffff;
   --colour-neutral-50: #f5f5f5;
+  --colour-neutral-600: #d3d3dc;
   --colour-neutral-700: #63666a;
   --colour-neutral-900: #292929;
+  --colour-neutral-900-light: #292929b3;
   --colour-neutral-950: #000000;
   --colour-navy-900: #003569;
   --colour-blue-600: #5993b9;

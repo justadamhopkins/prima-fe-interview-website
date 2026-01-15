@@ -7,6 +7,7 @@
   --colour-bg: var(--colour-neutral-50);
   --colour-bg-muted: var(--colour-neutral-50);
   --colour-surface-dark: var(--colour-charcoal-900);
+  --colour-surface-visible: var(--colour-neutral-900-light);
   --colour-accent: var(--colour-blue-600);
   --colour-accent-strong: var(--colour-navy-900);
   --colour-accent-alt: var(--colour-teal-600);
@@ -15,4 +16,5 @@
   --colour-ink: var(--colour-neutral-950);
   --colour-text-gradient-start: var(--colour-orange-400);
   --colour-text-gradient-end: var(--colour-pink-500);
+  --colour-separator: var(--colour-neutral-600);
 }
