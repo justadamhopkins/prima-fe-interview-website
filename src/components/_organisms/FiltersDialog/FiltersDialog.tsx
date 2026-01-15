@@ -11,6 +11,7 @@ import {
 } from "@molecules/Dialog";
 import { FilterChips, type TFilterChips } from "@molecules/FilterChips";
 import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 import styles from "./FiltersDialog.module.css";
 
 type TFiltersDialogProps = TDialogProps & TFilterChips;
@@ -39,7 +40,9 @@ export const FiltersDialog = ({
             asChild={true}
             aria-label="close dialog"
           >
-            <RawButton>X</RawButton>
+            <RawButton>
+              <IoClose size={24} />
+            </RawButton>
           </DialogClose>
           <FilterChips
             selectedValue={selectedValue}

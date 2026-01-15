@@ -15,10 +15,13 @@
     height: 40px;
     border-radius: var(--radius-round);
     font-size: var(--font-size-18);
-    padding: var(--space-pad-sm);
     color: var(--colour-fg-invert);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
   }
 }
