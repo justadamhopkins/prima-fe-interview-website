@@ -29,7 +29,7 @@ The figma file of the home test is available [here](https://www.figma.com/design
 
 The UI is complete and fully responsive.
 
-1. I followed the atomic design methodology when building the UI components.
+1. I followed the atomic design methodology when building the UI components. The app is also using typescript.
 2. I wrote a unit test for every component, using a custom abstraction with centralized setup functions to keep the tests clean, readable, and consistent.
 3. I used CSS modules with BEM selectors for styling, and I also showed how I’d add a semantic naming layer to keep components agnostic of the brand styling. This makes theming and white labeling much easier.
 4. I set up Storybook, and every component has its own story.
