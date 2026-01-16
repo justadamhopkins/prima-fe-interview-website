@@ -11,7 +11,7 @@
   }
 
   &--primary {
-    background-color: var(--colour-fg-invert);
+    background-color: var(--colour-neutral-50);
   }
 
   &--layout-center {
