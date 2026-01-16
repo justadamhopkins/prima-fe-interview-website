@@ -4,7 +4,6 @@
   gap: var(--space-gap-xs);
   align-items: center;
 
-
   &__label {
     --typography-text-m-font-size: var(--font-size-13);
     color: var(--colour-fg-muted);

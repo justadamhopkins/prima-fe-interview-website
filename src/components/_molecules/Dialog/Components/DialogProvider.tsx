@@ -7,23 +7,22 @@ import type { DialogProps } from "@radix-ui/react-dialog";
 import { createContext, type FC, use } from "react";
 import { DialogRoot } from "../Dialog";
 
-interface IDialogCtxProps extends Pick<TUseDisclosureReturn, "isOpen" | "close" | "open"> {
+type TDialogCtxProps = Pick<TUseDisclosureReturn, "isOpen" | "close" | "open"> & {
   isOpen: boolean;
-}
+};
 
-const DialogContext = createContext<IDialogCtxProps>({
+const DialogContext = createContext<TDialogCtxProps>({
   isOpen: false,
   close: () => {},
   open: () => {},
 });
 
-export interface IDialogProviderProps
-  extends Omit<DialogProps, "open">,
-    Pick<TUseDisclosureProps, "onOpen" | "onClose"> {
-  isDialogOpen?: boolean;
-}
+export type TDialogProviderProps = Omit<DialogProps, "open"> &
+  Pick<TUseDisclosureProps, "onOpen" | "onClose"> & {
+    isDialogOpen?: boolean;
+  };
 
-export const DialogProvider: FC<IDialogProviderProps> = ({
+export const DialogProvider: FC<TDialogProviderProps> = ({
   children,
   isDialogOpen,
   defaultOpen,
@@ -49,7 +48,7 @@ export const DialogProvider: FC<IDialogProviderProps> = ({
   );
 };
 
-export const useDialogContext = (): IDialogCtxProps => {
+export const useDialogContext = (): TDialogCtxProps => {
   const context = use(DialogContext);
 
   if (!context) {

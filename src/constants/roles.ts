@@ -5,6 +5,8 @@ export const ROLES = {
   EDITOR: "EDITOR",
   VIEWER: "VIEWER",
   GUEST: "GUEST",
+  OWNER: "OWNER",
+  INACTIVE: "INACTIVE",
 } as const;
 
 export type TRoleType = TValueOf<typeof ROLES>;

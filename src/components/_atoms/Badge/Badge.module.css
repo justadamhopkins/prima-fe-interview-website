@@ -21,6 +21,16 @@
     background-color: var(--colour-special);
   }
 
+  &--owner {
+    background-color: var(--colour-fg-invert);
+    color: var(--colour-ink);
+  }
+
+  &--inactive {
+    background-color: var(--colour-fg-invert);
+    color: var(--colour-ink);
+  }
+
   &--active {
     background-color: var(--colour-fg-muted);
     color: var(--colour-bg-muted);

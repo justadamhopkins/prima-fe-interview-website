@@ -5,15 +5,15 @@ import {
 } from "@radix-ui/react-toggle-group";
 import type { PropsWithChildren } from "react";
 
-export type TToggleGroupMultiProps<T extends string = string> = Omit<
+export type TToggleGroupMultiProps<T extends string[] = string[]> = Omit<
   ToggleGroupMultipleProps,
   "type" | "onValueChange" | "value"
 > & {
-  selectedValue: T[];
-  onValueChange: (value: T[]) => void;
+  selectedValue: T;
+  onValueChange: (value: T) => void;
 };
 
-export const ToggleGroupMulti = <T extends string>({
+export const ToggleGroupMulti = <T extends string[]>({
   selectedValue,
   onValueChange,
   children,
@@ -25,8 +25,8 @@ export const ToggleGroupMulti = <T extends string>({
       {...rest}
       className={className}
       type="multiple"
-      value={selectedValue}
-      onValueChange={onValueChange}
+      value={selectedValue as unknown as ToggleGroupMultipleProps["value"]}
+      onValueChange={onValueChange as unknown as ToggleGroupMultipleProps["onValueChange"]}
     >
       {children}
     </ToggleGroup>

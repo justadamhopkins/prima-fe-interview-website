@@ -6,11 +6,11 @@ import {
   renderHook,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-
 import type { ComponentType, PropsWithChildren, ReactElement, ReactNode } from "react";
+import { MemoryRouter } from "react-router";
 
 const WrapperComponent = ({ children }: PropsWithChildren) => {
-  return <>{children}</>;
+  return <MemoryRouter initialEntries={["/"]}>{children}</MemoryRouter>;
 };
 
 const customRender = (ui: ReactElement, options: RenderOptions = {}): RenderResult =>

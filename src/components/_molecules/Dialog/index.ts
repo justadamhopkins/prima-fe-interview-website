@@ -1,4 +1,4 @@
-export { DialogProvider, type IDialogProviderProps } from "./Components/DialogProvider";
+export { DialogProvider, type TDialogProviderProps } from "./Components/DialogProvider";
 export {
   DIALOG_LAYOUTS,
   DIALOG_VARIANTS,

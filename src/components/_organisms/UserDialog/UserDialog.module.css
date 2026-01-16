@@ -1,10 +1,4 @@
-.userCard {
-  background-color: var(--colour-fg-invert);
-  border-radius: var(--radius-6);
-  border: 1px solid var(--colour-separator);
-  padding: var(--space-pad-md);
-  width: 100%;
-
+.userDialog {
   &__header {
     display: flex;
     flex-direction: column;
@@ -37,8 +31,12 @@
     }
   }
 
-  &__footerWrapper {
+  &__buttonWrapper {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 640px) {
+      align-items: flex-end;
+    }
   }
 }
