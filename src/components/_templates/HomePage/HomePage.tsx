@@ -35,6 +35,10 @@ export const HomePage = () => {
       try {
         const response = await fetch(`https://api.prima.com/users?${queryParams.all.toString()}`);
 
+        if (!response.ok) {
+          throw new Error('Failed to fetch users');
+        }
+
         const data = await response.json();
 
         setUsers(data.data);
