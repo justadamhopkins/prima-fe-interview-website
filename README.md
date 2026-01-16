@@ -42,5 +42,6 @@ The UI is complete and fully responsive.
 
 1.I want to improve state management in the app, ideally by using React Query for backend data fetching. This would help me avoid writing custom loading states and simplify other aspects.
 2.I’d also like to refine my approach to typography. It works for now, but I think there’s room for improvement.
+3. I would like to add lint staged and husky to enforce consistent code styling and formatting.
 
 Overall, I’m happy with the result and feel it’s a solid demonstration of frontend development skills.
