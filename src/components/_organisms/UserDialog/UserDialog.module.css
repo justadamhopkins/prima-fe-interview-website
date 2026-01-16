@@ -7,6 +7,10 @@
     margin-bottom: var(--space-gap-md);
   }
 
+  &__trigger {
+    width: 100%;
+  }
+
   &__title {
     composes: titleM from "@styles/global/typography.module.css";
     @media (min-width: 640px) {

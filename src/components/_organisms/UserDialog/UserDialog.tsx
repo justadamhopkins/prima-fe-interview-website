@@ -23,7 +23,7 @@ export const UserDialog = ({ variant, layout, user }: TUserDialogProps) => {
 
   return (
     <DialogProvider onOpenChange={setIsUserDialogOpen} isDialogOpen={isUserDialogOpen}>
-      <DialogTrigger className={styles.filterDialog__trigger} asChild={true}>
+      <DialogTrigger className={styles.userDialog__trigger} asChild={true}>
         <Button onClick={() => ""} size={TSHIRT_SIZES.SM} variant={BUTTON_VARIANTS.PRIMARY}>
           View details
         </Button>
