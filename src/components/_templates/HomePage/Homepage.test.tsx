@@ -82,7 +82,7 @@ describe(HomePage, () => {
           );
         });
 
-        it.only("should render the error message", async () => {
+        it("should render the error message", async () => {
           const user = userEvent.setup();
 
           await user.type(screen.getByLabelText("WHAT ARE YOU LOOKING FOR?"), "George");

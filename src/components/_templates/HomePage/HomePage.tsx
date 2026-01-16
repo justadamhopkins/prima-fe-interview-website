@@ -9,29 +9,37 @@ import { FiltersDialog } from "@organisms/FiltersDialog";
 import { UserCardList } from "@organisms/UserCardList";
 import { type ChangeEvent, type FormEvent, useEffect, useState } from "react";
 import styles from "./Homepage.module.css";
+import {TUser} from "@app/types/api.ts";
+
+
+type TRequestState =
+    | { status: 'idle' }
+    | { status: 'loading' }
+    | { status: 'success'; data: TUser[] }
+    | { status: 'error'; error: string };
 
 export const HomePage = () => {
   const queryParams = useQueryParams();
   const searchQuery = queryParams.get("search");
   const rolesQuery = queryParams.get("roles");
   const [searchTerm, setSearchTerm] = useState<string>(searchQuery || "");
-  const [hasSearched, setHasSearched] = useState(Boolean(searchQuery));
-  const [users, setUsers] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [requestState, setRequestState] = useState<TRequestState>({ status: 'idle' });
+
+  const hasSearched = Boolean(searchQuery);
+  const isLoading = requestState.status === 'loading';
+  const isError = requestState.status === 'error';
+  const users = requestState.status === 'success' ? requestState.data : [];
 
   useEffect(() => {
     const payload = Object.fromEntries(queryParams.all.entries());
 
     if (!payload.search) {
-      setHasSearched(false);
+      setRequestState({ status: 'idle' });
       return;
     }
 
     const fetchUsers = async () => {
-      setIsLoading(true);
-      setIsError(false);
-      setHasSearched(true);
+      setRequestState({ status: 'loading' });
       try {
         const response = await fetch(`https://api.prima.com/users?${queryParams.all.toString()}`);
 
@@ -41,12 +49,12 @@ export const HomePage = () => {
 
         const data = await response.json();
 
-        setUsers(data.data);
-      } catch {
-        setIsLoading(false);
-        setIsError(true);
-      } finally {
-        setIsLoading(false);
+        setRequestState({ status: 'success', data: data.data });
+      } catch(error: unknown) {
+        setRequestState({
+          status: 'error',
+          error: error instanceof Error ? error.message : 'Unknown error occurred'
+        });
       }
     };
 
